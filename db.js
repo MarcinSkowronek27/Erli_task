@@ -1,45 +1,11 @@
 let db = {
-  employees: [
+  pictures: [
     {
-      firstName: 'John',
-      lastName: 'Doe',
-      department: 'IT'
+      url: 'https://images.pexels.com/photos/11741441/pexels-photo-11741441.jpeg?cs=srgb&dl=pexels-danil-lysov-11741441.jpg&fm=jpg',
+      urlCopy: 'https://images.pexels.com/photos/9811521/pexels-photo-9811521.jpeg?cs=srgb&dl=pexels-cottonbro-9811521.jpg&fm=jpg',
+      addDate: '10/05/2022',
+      downloadDate: '15/05/2022'
     },
-    {
-      firstName: 'Amanda',
-      lastName: 'Doe',
-      department: 'Marketing'
-    },
-    {
-      firstName: 'Johnatan',
-      lastName: 'Wilson',
-      department: 'IT'
-    },
-    {
-      firstName: 'Thomas',
-      lastName: 'Jefferson',
-      department: 'Testing'
-    },
-    {
-      firstName: 'Emma',
-      lastName: 'Cowell',
-      department: 'Testing'
-    }
-  ],
-  departments: [
-    { name: 'IT' },
-    { name: 'Marketing' },
-    { name: 'Testing' }
-  ],
-  products: [
-    {
-      name: 'New Wave Festival',
-      client: 'MyMusicWave corp.'
-    },
-    {
-      name: 'ImRich Banking official website',
-      client: 'ImRich LTD.'
-    }
   ]
 };
 

@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db');
+const ObjectId = require('mongodb').ObjectId;
 
 router.get('/pictures', (req, res) => {
   req.db.collection('pictures').find().toArray((err, data) => {
@@ -10,7 +11,11 @@ router.get('/pictures', (req, res) => {
 });
 
 router.get('/pictures/:id', (req, res) => {
-  res.json(db.pictures.find(item => item.id == req.params.id));
+  req.db.collection('pictures').findOne({ _id: ObjectId(req.params.id) }, (err, data) => {
+    if(err) res.status(500).json({ message: err });
+    else if(!data) res.status(404).json({ message: 'Not found' });
+    else res.json(data);
+  });
 });
 
 router.post('/pictures', (req, res) => {

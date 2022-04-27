@@ -1,5 +1,5 @@
-#
-To run server use the 'nodemon server.js'.
+# `nodemon server.js`
+Use to run server.
 To check of working endpoints use the postman.
-## 
-To run tests of backend use the command 'npm run test'.
+## `npm run test`
+To run tests of backend.

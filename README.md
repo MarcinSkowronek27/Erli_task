@@ -1,4 +1,4 @@
-# `nodemon server.js`
+## `nodemon server.js`
 Use to run server.
 To check of working endpoints use the postman.
 ## `npm run test`
